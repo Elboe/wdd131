@@ -1,0 +1,109 @@
+/* Importing Google Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #1f3b5e;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+header .highlight {
+    color: #f5b642;
+}
+
+/* Navigation Styling with Flex */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #f5b642;
+    color: #1f3b5e;
+    border-radius: 5px;
+}
+
+/* Main Layout */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Wider first column for "About Me" */
+    gap: 20px;
+    padding: 0 1rem;
+}
+
+
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card h2 {
+    background-color: #2f5b7d;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.card p, .card ul {
+    margin-top: 1rem;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card li a {
+    color: #3b5998;
+    text-decoration: none;
+}
+
+.card li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2f5b7d;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
