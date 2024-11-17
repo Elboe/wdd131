@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title content="Temple Picture Album">Temple Picture Album</title>
+  <meta name="author" content="Eric Justesen">
+  <meta name="description" content="Eric Justesen">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <script  defer src="scripts/temples.js"></script>
+  <script  defer src="scripts/getdates.js"></script>
+  
+</head>
+
+<body>
+    <header>
+        <h1>Temple Picture Album</h1>
+        <nav class="navigation">
+            <h6>Temple Album</h6>
+            <ul id="menu">
+                <li><a id="toggleMenu">&equiv;</a></li>
+                <li><a href="temples.html" class="active">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+</header>
+    <main id="gridly">
+        <h2>Temples</h2>
+        <figure>
+        <img src="images/GILBERT_ARIZONA_TEMPLE_crop.jpg" alt="Gilbert, AZ">
+        <figcaption>Gilbert, AZ</figcaption>
+        </figure>
+        <figure>
+        <img src="images/GILBERT_ARIZONA_TEMPLE_crop.jpg" alt="Gilbert, AZ">
+        <figcaption>Gilbert, AZ</figcaption>
+        </figure>
+        <figure>
+        <img src="images/GILBERT_ARIZONA_TEMPLE_crop.jpg" alt="Gilbert, AZ">
+        <figcaption>Gilbert, AZ</figcaption>
+        </figure>
+        <figure>
+        <img src="images/GILBERT_ARIZONA_TEMPLE_crop.jpg" alt="Gilbert, AZ">
+        <figcaption>Gilbert, AZ</figcaption>
+        </figure>
+        <figure>
+        <img src="images/GILBERT_ARIZONA_TEMPLE_crop.jpg" alt="Gilbert, AZ">
+        <figcaption>Gilbert, AZ</figcaption>
+        </figure>
+        <figure>
+        <img src="images/GILBERT_ARIZONA_TEMPLE_crop.jpg" alt="Gilbert, AZ">
+        <figcaption>Gilbert, AZ</figcaption>
+        </figure>
+        <figure>
+        <img src="images/GILBERT_ARIZONA_TEMPLE_crop.jpg" alt="Gilbert, AZ">
+        <figcaption>Gilbert, AZ</figcaption>
+        </figure>
+        <figure>
+        <img src="images/GILBERT_ARIZONA_TEMPLE_crop.jpg" alt="Gilbert, AZ">
+        <figcaption>Gilbert, AZ</figcaption>
+        </figure>
+        <figure>
+        <img src="images/GILBERT_ARIZONA_TEMPLE_crop.jpg" alt="Gilbert, AZ">
+        <figcaption>Gilbert, AZ</figcaption>
+        </figure>
+        <figure>
+        <img src="images/GILBERT_ARIZONA_TEMPLE_crop.jpg" alt="Gilbert, AZ">
+        <figcaption>Gilbert, AZ</figcaption>
+        </figure>
+    </main>
+</body>
+
+<footer>
+    <p>&copy; <span id="currentyear"></span> Eric Justesen | Idaho U.S</p>
+    <p id="lastModified"></p>
+</footer>
+
+<script>
+    // JavaScript code to populate current year and last modified date
+    const currentYear = new Date().getFullYear();
+    document.getElementById("currentyear").textContent = currentYear;
+    document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
+</script>

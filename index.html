@@ -37,8 +37,15 @@
     </main>
 
     <footer>
-        <p>©2024 Eric Justesen</p>
-        <p>Last Modification: 11/8/24 11:16:37</p>
+        <p>&copy; <span id="currentyear"></span> Eric Justesen | Idaho U.S</p>
+        <p id="lastModified"></p>
     </footer>
+
+    <script>
+        // JavaScript code to populate current year and last modified date
+        const currentYear = new Date().getFullYear();
+        document.getElementById("currentyear").textContent = currentYear;
+        document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
+    </script>
 </body>
 </html>
