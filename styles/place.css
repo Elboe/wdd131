@@ -1,0 +1,181 @@
+:root {
+    /* fonts */
+    --font-heading: "Roboto", serif;
+    --font-page: "Helvetica", sans-serif;
+    /* colors */
+    --flag-red: #ffffff;
+    --flag-yellow: #001aff;
+    --white: #ffffff;
+    --flag-black: #ff0000;
+}
+
+
+@media only screen and (min-width: 32.5rem) {
+    h1 {
+        flex-direction: row;
+        max-width: fit-content;
+    }
+    body {
+        position: relative;
+    }
+    .overlay-data, .overlay-weather {
+        padding: 1rem;
+    }
+    .overlay-data {
+        position: absolute;
+        top: 170px;
+        left: 20px;
+        width: 350px;
+        background-color: var(--flag-yellow);
+        color: var(--flag-black);
+    }
+    #weather-icon {
+        display: none;
+    }
+
+    .overlay-weather {
+        position: absolute;
+        right: 20px;
+        bottom: 100px;
+        width: 350px;
+        background-color: var(--flag-yellow);
+        color: var(--flag-black);
+        display: grid;
+    }
+
+    .overlay-weather h3::after {
+        content: '  ';
+        text-shadow: 0 0 3px white;
+    }
+
+}
+
+.banner {
+    display: flex;
+    background-color: var(--flag-black);
+    border: 5px solid var(--flag-yellow);
+    border-radius: 20px;
+    width: 100%;
+    position: relative;/*added just*/
+}
+.banner h1 {
+    text-align: center;
+    margin-left: 40%;
+    font-family: var(--font-heading);
+    font-weight: 100;
+    font-size: 50px;
+    color: var(--white);
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /*width: 100%;
+    height: auto; /* Adjust height as needed */
+    position: relative; /* Required for positioning the overlay */
+}
+.hero picture {
+    width: 100%;
+    height: auto;
+    
+}
+.hero img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.overlay-data {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 1%;
+    height: 30%;
+    width: 30%;
+    border-radius: 10px;
+    border: 5px solid var(--white);
+    padding: 10px; 
+    background-color: var(--flag-yellow); 
+    color: var(--flag-black);
+}
+
+.overlay-data h3 {
+    text-align: center;
+    color: var(--flag-black);
+    font-family: var(--font-heading);
+}
+
+
+.label::after {
+    content: ":";
+    margin-right: 4px; /* Adjust as needed */
+}
+
+.overlay-weather {
+    display: flex;
+    flex-direction: column; /* Display items in a column */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    width: 30%;
+    height: 30%;
+    border: 5px solid var(--white);
+    border-radius: 10px;
+    background-color: var(--flag-yellow);
+    
+}
+.weather-header {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between;
+}
+
+.weather-header h3 {
+    margin-left: 40px; /* Add some space between the h3 and img */
+    font-family: var(--font-heading);
+}
+.weather-header img {
+   width: 50px;
+   height: 50px;
+}
+.label-value-pair {
+    display: flex;
+    flex-direction: column; /*display items in column*/
+    
+}
+.label-value-pair div {
+    display: flex;
+    padding: 1rem;
+    align-items: center; /* Center items vertically */
+    margin-bottom: 5px; /* Add some space between items */
+}
+
+.label,
+.value {
+    font-family: var(--font-page);
+    font-size: 1em;
+    width: 100px;
+}
+.label {
+    text-align: right;
+    font-weight: 400;
+}
+
+.value {
+    text-align: left;
+    font-weight: 400;
+}
+
+footer{
+    background-color: var(--flag-black);
+    color: var(--white);
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    border: 5px solid var(--flag-black);
+    border-radius: 20px;
+}

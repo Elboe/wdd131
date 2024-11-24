@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title content="WDD 131, The Philippines">WDD 131, Country Page</title>
+    <meta name="author" content="Eric Justesen">
+    <meta name="description" content="Eric Justesen, WDD 131 ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/windchill.js"></script>
+
+  </head>
+  <body>
+    <header>
+        <div class="banner">
+            <h1>The Philippines</h1>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/philippines.webp" media="(min-width: 1000px)">
+                <source srcset="images/philippines.webp" media="(min-width: 500px)">
+                <img src="images/philippines.webp" alt="The Philippines" width="500">
+            </picture>
+            <div class="overlay-data">
+                <h3>Data</h3>
+                <div class="label-value-pair">
+                    <div>
+                        <span class="label">Capital City :</span>
+                        <span class="value">Manila</span>
+                    </div>
+                    <div>
+                        <span class="label">Population :</span>
+                        <span class="value">1.8 Million</span>        
+                    </div>
+                    <div>
+                        <span class="label">GDP :</span>
+                        <span class="value">$ 1.392T</span>
+                    </div>    
+                </div>
+                
+            </div>
+            <div class="overlay-weather">
+                <div class="weather-header">
+                    <h3>Weather</h3>
+                    <img src="images/weather.svg" alt="weather-icon">
+                </div>
+                
+                <div class="label-value-pair">
+                    <div>
+                        <span class="label">Temperature</span>
+                        <span id="sun" class="value">29℃</span>
+                    </div>
+                    <div>
+                        <span class="label">Yearly Rain</span>
+                        <span id="rain" class="value">346cm</span>
+                    </div>
+                    <div>
+                        <span class="label">Windchill</span>
+                        <span id="wind-chill" class="value">11km/h</span>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </main>
+    <footer>
+        <p>
+          <span id="currentyear"></span> Eric Justesen
+        </p>
+        <p id="lastModified">last</p>
+    </footer>
+
+  </body>
+</html>
