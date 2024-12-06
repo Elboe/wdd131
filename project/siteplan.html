@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woolly Monkeys Site Plan</title>
+    <link rel="stylesheet" href="siteplan.css">
+</head>
+
+<body>
+    <header>
+        <h1>Site Plan for Woolly Monkeys Website</h1>
+    </header>
+
+    <main>
+        <!-- Site Name Section -->
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <p><strong>Name:</strong> Woolly Monkey Madness</p>
+            <p><strong>Reason:</strong> The name "Woolly Monkey Madness" was chosen because it describes my passion for these primates and it's pretty catchy as well.</p>
+        </section>
+
+        <!-- Site Purpose Section -->
+        <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <p>The site is designed to educate and raise awareness about woolly monkeys, their habitats, behavior, conservation status, and the efforts needed to protect them.</p>
+        </section>
+
+        <!-- Scenarios Section -->
+        <section id="scenarios">
+            <h2>Scenarios</h2>
+            <ul>
+                <li><strong>Scenario 1:</strong> What are the major threats to woolly monkeys in the wild?</li>
+                <li><strong>Scenario 2:</strong> How can I contribute to conservation efforts for woolly monkeys?</li>
+            </ul>
+        </section>
+
+        <!-- Color Schema Section -->
+        <section id="color-schema">
+            <h2>Color Schema</h2>
+            <ul>
+                <li><strong>Dark Green (#2E8B57):</strong> Used for headings and navigation.</li>
+                <li><strong>Light Beige (#F5F5DC):</strong> Used for the background.</li>
+            </ul>
+        </section>
+
+        <!-- Typography Section -->
+        <section id="typography">
+            <h2>Typography</h2>
+            <ul>
+                <li><strong>Font 1: Arial:</strong> Used for body text to ensure readability.</li>
+                <li><strong>Font 2: Georgia:</strong> Used for headings.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Eric Justesen | Idaho U.S</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // JavaScript code to populate current year and last modified date
+        const currentYear = new Date().getFullYear();
+        document.getElementById("currentyear").textContent = currentYear;
+        document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
+    </script>
+</body>
+
+</html>

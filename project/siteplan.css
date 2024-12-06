@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #2E8B57; /* Dark Green */
+    background-color: #F5F5DC; /* Light Beige */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #2E8B57; /* Dark Green */
+    color: #F5F5DC; /* Light Beige */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    margin: 0;
+}
+
+/* Section Styles */
+section {
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    max-width: 800px;
+    border-bottom: 2px solid #2E8B57; /* Dark Green */
+}
+
+section h2 {
+    font-family: Georgia, serif;
+    color: #2E8B57; /* Dark Green */
+}
+
+/* List Styles */
+ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2E8B57; /* Dark Green */
+    color: #F5F5DC; /* Light Beige */
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Links */
+a {
+    color: #2E8B57;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
