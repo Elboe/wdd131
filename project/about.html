@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn all about woolly monkeys, their habitats, and their importance to biodiversity.">
+    <title>About Woolly Monkeys</title>
+    <link rel="stylesheet" href="get-involved.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Woolly Monkeys</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>About Woolly Monkeys</h1>
+        <p>Discover the fascinating world of woolly monkeys and why they matter.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>Introduction to Woolly Monkeys</h2>
+            <p>Woolly monkeys are a species of primates native to the rainforests of South America. Known for their playful nature and dense fur, they are an integral part of their ecosystem.</p>
+        </section>
+
+        <section>
+            <h2>Habitat</h2>
+            <p>These primates inhabit the lush rainforests of the Amazon Basin, thriving in areas with abundant trees and diverse flora. They play a crucial role in forest regeneration through seed dispersal.</p>
+        </section>
+
+        <section>
+            <h2>Conservation Status</h2>
+            <p>Woolly monkeys are under threat due to deforestation and hunting. Conservation efforts are essential to protect their habitats and ensure their survival.</p>
+        </section>
+
+        <section>
+            <img src="images/silvery-woolly-monkey-shutterstock_1327426052-resize-1.jpg" alt="A woolly monkey in its natural habitat" loading="lazy">
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Eric Justesen | Idaho U.S</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // JavaScript code to populate current year and last modified date
+        const currentYear = new Date().getFullYear();
+        document.getElementById("currentyear").textContent = currentYear;
+        document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
+    </script>
+</body>
+
+</html>

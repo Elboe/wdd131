@@ -7,6 +7,32 @@ body {
     padding: 0;
     line-height: 1.6;
 }
+/* Navigation Bar */
+.navbar {
+    background-color: #2E8B57;
+    color: #F5F5DC;
+    padding: 10px 15px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #2E8B57;
+    border-radius: 4px;
+}
 
 /* Header Styles */
 header {

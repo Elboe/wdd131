@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get involved in conservation efforts for woolly monkeys and make a difference.">
+    <title>Get Involved - Woolly Monkey Madness</title>
+    <link rel="stylesheet" href="get-involved.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Woolly Monkeys</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Get Involved</h1>
+        <p>Join us in protecting woolly monkeys and their habitats.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>How You Can Help</h2>
+            <p>There are many ways to contribute to the conservation of woolly monkeys:</p>
+            <ul>
+                <li>Volunteer for fieldwork in conservation projects.</li>
+                <li>Donate to organizations working to protect their habitats.</li>
+                <li>Raise awareness about the threats they face.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <form id="get-involved-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Eric Justesen | Idaho U.S</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // JavaScript code to populate current year and last modified date
+        const currentYear = new Date().getFullYear();
+        document.getElementById("currentyear").textContent = currentYear;
+        document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
+    </script>
+</body>
+
+</html>

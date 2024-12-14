@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about woolly monkeys, their habitat, behavior, and how to contribute to their conservation efforts.">
+    <title>Woolly Monkey Madness</title>
+    <link rel="stylesheet" href="get-involved.css">
+</head>
+
+<body>
+    <<!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Woolly Monkeys</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Woolly Monkey Madness</h1>
+        <p>Your go-to site for everything about woolly monkeys!</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>About Woolly Monkeys</h2>
+            <p>Woolly monkeys are fascinating primates native to the Amazon rainforests. They are known for their dense, woolly fur and playful nature. Discover their unique habits and learn how we can protect them.</p>
+        </section>
+
+        <section>
+            <h2>Why Conservation Matters</h2>
+            <p>These primates face significant threats due to deforestation and hunting. Conservation efforts are vital to ensuring their survival for future generations.</p>
+        </section>
+
+        <section>
+            <img src="images/Brown-Woolly-iStock-451934759-resize.webp" alt="A playful woolly monkey" loading="lazy">
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Eric Justesen | Idaho U.S</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // JavaScript code to populate current year and last modified date
+        const currentYear = new Date().getFullYear();
+        document.getElementById("currentyear").textContent = currentYear;
+        document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
+    </script>
+</body>
+
+</html>
